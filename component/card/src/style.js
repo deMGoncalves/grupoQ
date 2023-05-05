@@ -1,4 +1,4 @@
-import styled from '@kuba/styled'
+import styled from '@grupoq/styled'
 
 export default styled.style`
   .shape {

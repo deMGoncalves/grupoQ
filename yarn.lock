@@ -813,6 +813,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/shelf@workspace:component/shelf":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/shelf@workspace:component/shelf"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/styled@workspace:.prelude/standard/styled":
   version: 0.0.0-use.local
   resolution: "@grupoq/styled@workspace:.prelude/standard/styled"
@@ -2009,12 +2015,6 @@ __metadata:
   checksum: 8ed0d477ce3bc9c6fe2bf6a6a2cc316bb9c4127c5a7827bae947fa8ec34c7092395c5a283cc300c05b5fa01cbbfa1f938f410a7bf75db7c7846fea41949989ec
   languageName: node
   linkType: hard
-
-"@zuen/shelf@workspace:component/shelf":
-  version: 0.0.0-use.local
-  resolution: "@zuen/shelf@workspace:component/shelf"
-  languageName: unknown
-  linkType: soft
 
 "JSONStream@npm:^1.0.4":
   version: 1.3.5

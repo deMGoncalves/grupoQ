@@ -1,22 +1,14 @@
 import h from '@grupoq/h'
-import Header from './header'
-import Headline from './headline'
-import Leading from './leading'
 import Logo from '@grupoq/logo'
-import Row from './row'
-import Trailing from './trailing'
+import style from './style'
 
 function component () {
   return (
-    <Header>
-      <Row>
-        <Leading>
-          <Logo />
-        </Leading>
-        <Headline />
-        <Trailing />
-      </Row>
-    </Header>
+    <header className={style.header}>
+      <div className={style.header__container}>
+        <Logo />
+      </div>
+    </header>
   )
 }
 

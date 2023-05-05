@@ -1,7 +1,7 @@
 import styled from '@grupoq/styled'
 
 export default styled`
-  .card {
+  .product {
     background-color: var(--color-pure-white);
     border-radius: var(--border-radius-sm);
     content-visibility: auto;
@@ -12,7 +12,7 @@ export default styled`
     padding: var(--spacing_inset-xs);
   }
 
-  .card__image {
+  .product__image {
     aspect-ratio: 3 / 4;
     object-fit: contain;
     padding: var(--spacing_inset-lg);

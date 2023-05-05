@@ -1,6 +1,5 @@
-import * as f from '@grupoq/f'
-import { paint, repaint } from '@grupoq/h'
-import Card from '@grupoq/card'
+import { paint } from '@grupoq/h'
+import { setGlobal } from '@grupoq/global'
 import component from './component'
 import jsonld from './jsonld'
 import storage from './storage'
@@ -9,20 +8,13 @@ import storage from './storage'
 @jsonld
 @storage
 class Home {
-  #cards
-
-  get cards () {
-    return (this.#cards ??= f.repeat(24, {}).map(Card.stub))
-  }
-
   [storage.onError] (error) {
     console.log(error)
     return this
   }
 
-  @repaint
-  [storage.onResponse] (data) {
-    this.#cards = data.map(Card.create)
+  [storage.onResponse] (products) {
+    setGlobal({ products })
     return this
   }
 }

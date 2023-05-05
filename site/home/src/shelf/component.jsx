@@ -1,10 +1,10 @@
 import h from '@grupoq/h'
 import style from './style'
 
-function component (_props, children) {
+function component (shelf) {
   return (
     <div className={style.shelf}>
-      {children}
+      {shelf.products}
     </div>
   )
 }

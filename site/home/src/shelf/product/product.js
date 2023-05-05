@@ -5,7 +5,7 @@ import component from './component'
 import Stub from './stub'
 
 @paint(component)
-class Card {
+class Product {
   #id
   #image
   #price
@@ -36,7 +36,7 @@ class Card {
   }
 
   static create (data) {
-    return new Card(
+    return new Product(
       data.id,
       data.image,
       data.price,
@@ -49,4 +49,4 @@ class Card {
   }
 }
 
-export default Card
+export default Product

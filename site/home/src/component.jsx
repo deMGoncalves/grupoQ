@@ -1,14 +1,14 @@
 import h, { Fragment } from '@grupoq/h'
 import Header from '@grupoq/header'
 import Main from './main'
-import Shelf from '@grupoq/shelf'
+import Shelf from './shelf'
 
-function component (home) {
+function component () {
   return (
     <>
       <Header />
       <Main>
-        <Shelf>{home.cards}</Shelf>
+        <Shelf />
       </Main>
     </>
   )

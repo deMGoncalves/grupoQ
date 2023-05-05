@@ -11,5 +11,5 @@ jsonld.push({
   publisher: {
     '@id': '#organization'
   },
-  url: 'https://grupoq.store'
+  url: 'https://grupoq.pages.dev'
 })

@@ -5,5 +5,5 @@ jsonld.push({
   '@type': 'Organization',
   logo: './grupoq.png',
   name: 'grupoq',
-  url: 'https://grupoq.store'
+  url: 'https://grupoq.pages.dev'
 })

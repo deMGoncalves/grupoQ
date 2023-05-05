@@ -11,7 +11,7 @@ jsonld.push({
 jsonld.push({
   '@id': '#item',
   '@type': 'ListItem',
-  item: 'https://grupoq.store',
+  item: 'https://grupoq.pages.dev',
   name: 'grupoq',
   position: 0
 })

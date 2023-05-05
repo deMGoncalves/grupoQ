@@ -723,6 +723,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/filter@workspace:.prelude/standard/filter":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/filter@workspace:.prelude/standard/filter"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/group@workspace:.prelude/polyfill/group":
   version: 0.0.0-use.local
   resolution: "@grupoq/group@workspace:.prelude/polyfill/group"

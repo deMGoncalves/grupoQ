@@ -34,6 +34,7 @@ class Card {
   }
 
   static create (data) {
+    console.log(data.id)
     return new Card(
       data.id,
       data.image,

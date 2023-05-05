@@ -1,6 +1,6 @@
 {
   "main": "src/index.js",
-  "name": "@grupq/router",
+  "name": "@grupoq/router",
   "private": true,
   "version": "1.0.0"
 }

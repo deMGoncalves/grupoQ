@@ -705,6 +705,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/env@workspace:.prelude/standard/env":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/env@workspace:.prelude/standard/env"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/f@workspace:.prelude/standard/f":
   version: 0.0.0-use.local
   resolution: "@grupoq/f@workspace:.prelude/standard/f"

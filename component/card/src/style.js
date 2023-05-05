@@ -15,6 +15,7 @@ export default styled`
   .card__image {
     aspect-ratio: 3 / 4;
     object-fit: contain;
+    padding: var(--spacing_inset-xs);
     width: 100%;
   }
 `

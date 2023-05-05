@@ -1,4 +1,4 @@
-import { paint, repaint } from '@grupoq/h'
+import { paint } from '@grupoq/h'
 import { setDescription } from '@grupoq/description'
 import { setGlobal } from '@grupoq/global'
 import { setTitle } from '@grupoq/title'
@@ -15,9 +15,8 @@ class Product {
     return this
   }
 
-  @repaint
   [storage.onResponse] (product) {
-    setGlobal(product)
+    setGlobal({ product })
     setTitle(product.title)
     setDescription(product.description)
     return this

@@ -1,10 +1,11 @@
 import container from '@grupoq/container'
 import h from '@grupoq/h'
 import Metro from '@grupoq/metro'
+import style from './style'
 
 function component (breadcrumb) {
   return (
-    <section>
+    <section className={style.breadcrumb}>
       <container.Nav>
         <Metro>
           {breadcrumb.paths}

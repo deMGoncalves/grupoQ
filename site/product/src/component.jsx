@@ -1,3 +1,4 @@
+import Breadcrumb from './breadcrumb'
 import h, { Fragment } from '@grupoq/h'
 import Header from '@grupoq/header'
 import Main from './main'
@@ -7,6 +8,7 @@ function component () {
   return (
     <>
       <Header />
+      <Breadcrumb />
       <Main>
         <Title />
       </Main>

@@ -795,6 +795,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/metro@workspace:.prelude/element/metro":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/metro@workspace:.prelude/element/metro"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/middleware@workspace:.prelude/standard/middleware":
   version: 0.0.0-use.local
   resolution: "@grupoq/middleware@workspace:.prelude/standard/middleware"
@@ -852,6 +858,12 @@ __metadata:
 "@grupoq/setimmediate@workspace:.prelude/polyfill/setImmediate":
   version: 0.0.0-use.local
   resolution: "@grupoq/setimmediate@workspace:.prelude/polyfill/setImmediate"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/show@workspace:.prelude/directive/show":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/show@workspace:.prelude/directive/show"
   languageName: unknown
   linkType: soft
 

@@ -717,15 +717,33 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/header@workspace:component/header":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/header@workspace:component/header"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/home@workspace:site/home":
   version: 0.0.0-use.local
   resolution: "@grupoq/home@workspace:site/home"
   languageName: unknown
   linkType: soft
 
+"@grupoq/img@workspace:.prelude/element/img":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/img@workspace:.prelude/element/img"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/jsonld@workspace:.prelude/pixel/jsonld":
   version: 0.0.0-use.local
   resolution: "@grupoq/jsonld@workspace:.prelude/pixel/jsonld"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/logo@workspace:component/logo":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/logo@workspace:component/logo"
   languageName: unknown
   linkType: soft
 

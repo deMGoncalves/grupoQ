@@ -5,10 +5,10 @@ import effect from './effect'
 @paint(component)
 @effect
 class Title {
-  #content = 'Grupo Q';
+  #content
 
   get content () {
-    return this.#content
+    return (this.#content ??= 'Grupo Q')
   }
 
   @repaint

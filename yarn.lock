@@ -687,6 +687,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/card@workspace:component/card":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/card@workspace:component/card"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/description@workspace:.prelude/pixel/description":
   version: 0.0.0-use.local
   resolution: "@grupoq/description@workspace:.prelude/pixel/description"

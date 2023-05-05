@@ -729,6 +729,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/global@workspace:.prelude/standard/global":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/global@workspace:.prelude/standard/global"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/group@workspace:.prelude/polyfill/group":
   version: 0.0.0-use.local
   resolution: "@grupoq/group@workspace:.prelude/polyfill/group"
@@ -798,6 +804,12 @@ __metadata:
 "@grupoq/polished@workspace:.prelude/standard/polished":
   version: 0.0.0-use.local
   resolution: "@grupoq/polished@workspace:.prelude/standard/polished"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/product@workspace:site/product":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/product@workspace:site/product"
   languageName: unknown
   linkType: soft
 

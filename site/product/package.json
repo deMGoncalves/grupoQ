@@ -1,0 +1,6 @@
+{
+  "main": "src/index.jsx",
+  "name": "@grupoq/product",
+  "private": true,
+  "version": "1.0.0"
+}

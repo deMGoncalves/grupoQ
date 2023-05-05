@@ -681,6 +681,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@grupq/router@workspace:.prelude/standard/router":
+  version: 0.0.0-use.local
+  resolution: "@grupq/router@workspace:.prelude/standard/router"
+  languageName: unknown
+  linkType: soft
+
+"@grupq/setimmediate@workspace:.prelude/polyfill/setImmediate":
+  version: 0.0.0-use.local
+  resolution: "@grupq/setimmediate@workspace:.prelude/polyfill/setImmediate"
+  languageName: unknown
+  linkType: soft
+
 "@humanwhocodes/config-array@npm:^0.11.8":
   version: 0.11.8
   resolution: "@humanwhocodes/config-array@npm:0.11.8"

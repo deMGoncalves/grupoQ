@@ -693,12 +693,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@grupoq/card@workspace:component/card":
-  version: 0.0.0-use.local
-  resolution: "@grupoq/card@workspace:component/card"
-  languageName: unknown
-  linkType: soft
-
 "@grupoq/description@workspace:.prelude/pixel/description":
   version: 0.0.0-use.local
   resolution: "@grupoq/description@workspace:.prelude/pixel/description"
@@ -846,12 +840,6 @@ __metadata:
 "@grupoq/setimmediate@workspace:.prelude/polyfill/setImmediate":
   version: 0.0.0-use.local
   resolution: "@grupoq/setimmediate@workspace:.prelude/polyfill/setImmediate"
-  languageName: unknown
-  linkType: soft
-
-"@grupoq/shelf@workspace:component/shelf":
-  version: 0.0.0-use.local
-  resolution: "@grupoq/shelf@workspace:component/shelf"
   languageName: unknown
   linkType: soft
 

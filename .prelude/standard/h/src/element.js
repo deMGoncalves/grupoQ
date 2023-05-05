@@ -100,7 +100,7 @@ class Element {
   }
 
   removeAttribute (attr) {
-    this.#node.removeAttribute(attr.key)
+    this.#node.removeAttribute(attr?.key)
     return this
   }
 

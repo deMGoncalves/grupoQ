@@ -21,7 +21,7 @@ export default styled`
   }
 
   body {
-    /* overscroll-behavior-y: contain; */
+    background-color: var(--color-master-lightest);
   }
 
   button {

@@ -6,6 +6,7 @@ export default styled`
     border-radius: var(--border-radius-sm);
     content-visibility: auto;
     cursor: pointer;
+    padding: var(--spacing_inset-xs);
   }
 
   .card__img {

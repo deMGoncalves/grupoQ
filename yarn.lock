@@ -831,9 +831,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/skeleton@workspace:.prelude/element/skeleton":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/skeleton@workspace:.prelude/element/skeleton"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/styled@workspace:.prelude/standard/styled":
   version: 0.0.0-use.local
   resolution: "@grupoq/styled@workspace:.prelude/standard/styled"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/text@workspace:.prelude/element/text":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/text@workspace:.prelude/element/text"
   languageName: unknown
   linkType: soft
 

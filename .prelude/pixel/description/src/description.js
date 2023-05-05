@@ -5,10 +5,10 @@ import effect from './effect'
 @paint(component)
 @effect
 class Description {
-  #content = 'A plataforma prática para o preparo para concursos públicos, que integra todas as etapas do estudo. Com 450 mil assinantes, é a maior edtech do Brasil.';
+  #content
 
   get content () {
-    return this.#content
+    return (this.#content ??= 'A plataforma prática para o preparo para concursos públicos, que integra todas as etapas do estudo. Com 450 mil assinantes, é a maior edtech do Brasil.')
   }
 
   @repaint

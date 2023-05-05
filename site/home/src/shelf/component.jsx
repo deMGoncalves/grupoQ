@@ -3,9 +3,9 @@ import style from './style'
 
 function component (shelf) {
   return (
-    <div className={style.shelf}>
+    <section className={style.shelf}>
       {shelf.products}
-    </div>
+    </section>
   )
 }
 

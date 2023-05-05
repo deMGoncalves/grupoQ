@@ -1,6 +1,6 @@
 {
-  "name": "grupoQ",
-	"short_name" : "grupoQ",
+  "name": "Grupo Q",
+	"short_name" : "Grupo Q",
   "description": "A plataforma prática para o preparo para concursos públicos, que integra todas as etapas do estudo. Com 450 mil assinantes, é a maior edtech do Brasil.",
 	"display" : "standalone",
   "display_override": ["window-control-overlay", "minimal-ui"],

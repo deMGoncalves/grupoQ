@@ -6,7 +6,9 @@ import '@grupoq/token'
 import '@grupoq/reset'
 import '@grupoq/title'
 import '@grupoq/description'
+import '@grupoq/canonical'
 import '@grupoq/jsonld'
-import '@grupoq/serviceworker'
 
 import '@grupoq/home'
+
+import '@grupoq/serviceworker'

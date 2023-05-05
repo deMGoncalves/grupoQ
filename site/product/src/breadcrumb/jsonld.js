@@ -1,14 +1,15 @@
 import { params, urlFor } from '@grupoq/router'
-import global from '@grupoq/global'
+import interceptor from '@grupoq/interceptor'
 import jsonld from '@grupoq/jsonld'
-import middleware from '@grupoq/middleware'
 
-export default middleware(function () {
+export default interceptor(function (args, next) {
+  const [product] = args
   jsonld.push({
     '@id': '#item',
     '@type': 'ListItem',
     item: `https://grupoq.pages.dev${urlFor('product', params)}`,
-    name: global.prduct?.title,
+    name: product.title,
     position: 1
   })
+  return next(...args)
 })

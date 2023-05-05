@@ -7,7 +7,6 @@ import jsonld from './jsonld'
 import storage from './storage'
 
 @paint(component)
-@jsonld
 @storage
 class Product {
   [storage.onError] (error) {
@@ -15,6 +14,7 @@ class Product {
     return this
   }
 
+  @jsonld
   [storage.onResponse] (product) {
     setGlobal({ product })
     setTitle(product.title)

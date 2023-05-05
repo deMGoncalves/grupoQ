@@ -777,6 +777,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/interceptor@workspace:.prelude/standard/interceptor":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/interceptor@workspace:.prelude/standard/interceptor"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/jsonld@workspace:.prelude/pixel/jsonld":
   version: 0.0.0-use.local
   resolution: "@grupoq/jsonld@workspace:.prelude/pixel/jsonld"

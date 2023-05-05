@@ -2,6 +2,7 @@ import { component, Path } from '@grupoq/breadcrumb'
 import { paint, repaint } from '@grupoq/h'
 import { params, urlFor } from '@grupoq/router'
 import effect from './effect'
+import jsonld from './jsonld'
 
 @paint(component)
 @effect
@@ -16,6 +17,7 @@ class Breadcrumb {
   }
 
   @repaint
+  @jsonld
   [effect.onChange] (product) {
     this.#paths = [
       { title: 'Home', href: urlFor('home') },

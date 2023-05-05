@@ -789,6 +789,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/polished@workspace:.prelude/standard/polished":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/polished@workspace:.prelude/standard/polished"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/requestanimationframe@workspace:.prelude/polyfill/requestAnimationFrame":
   version: 0.0.0-use.local
   resolution: "@grupoq/requestanimationframe@workspace:.prelude/polyfill/requestAnimationFrame"

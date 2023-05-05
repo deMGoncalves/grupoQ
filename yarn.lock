@@ -681,15 +681,123 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@grupq/router@workspace:.prelude/standard/router":
+"@grupoq/agent@workspace:.prelude/standard/agent":
   version: 0.0.0-use.local
-  resolution: "@grupq/router@workspace:.prelude/standard/router"
+  resolution: "@grupoq/agent@workspace:.prelude/standard/agent"
   languageName: unknown
   linkType: soft
 
-"@grupq/setimmediate@workspace:.prelude/polyfill/setImmediate":
+"@grupoq/description@workspace:.prelude/pixel/description":
   version: 0.0.0-use.local
-  resolution: "@grupq/setimmediate@workspace:.prelude/polyfill/setImmediate"
+  resolution: "@grupoq/description@workspace:.prelude/pixel/description"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/echo@workspace:.prelude/standard/echo":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/echo@workspace:.prelude/standard/echo"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/f@workspace:.prelude/standard/f":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/f@workspace:.prelude/standard/f"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/group@workspace:.prelude/polyfill/group":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/group@workspace:.prelude/polyfill/group"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/h@workspace:.prelude/standard/h":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/h@workspace:.prelude/standard/h"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/home@workspace:site/home":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/home@workspace:site/home"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/jsonld@workspace:.prelude/pixel/jsonld":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/jsonld@workspace:.prelude/pixel/jsonld"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/magic@workspace:.prelude/standard/magic":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/magic@workspace:.prelude/standard/magic"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/middleware@workspace:.prelude/standard/middleware":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/middleware@workspace:.prelude/standard/middleware"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/overload@workspace:.prelude/standard/overload":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/overload@workspace:.prelude/standard/overload"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/requestanimationframe@workspace:.prelude/polyfill/requestAnimationFrame":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/requestanimationframe@workspace:.prelude/polyfill/requestAnimationFrame"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/reset@workspace:.prelude/pixel/reset":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/reset@workspace:.prelude/pixel/reset"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/revoke@workspace:.prelude/standard/revoke":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/revoke@workspace:.prelude/standard/revoke"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/router@workspace:.prelude/standard/router":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/router@workspace:.prelude/standard/router"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/serviceworker@workspace:.prelude/pixel/serviceWorker":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/serviceworker@workspace:.prelude/pixel/serviceWorker"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/setimmediate@workspace:.prelude/polyfill/setImmediate":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/setimmediate@workspace:.prelude/polyfill/setImmediate"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/styled@workspace:.prelude/standard/styled":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/styled@workspace:.prelude/standard/styled"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/title@workspace:.prelude/pixel/title":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/title@workspace:.prelude/pixel/title"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/token@workspace:.prelude/pixel/token":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/token@workspace:.prelude/pixel/token"
   languageName: unknown
   linkType: soft
 

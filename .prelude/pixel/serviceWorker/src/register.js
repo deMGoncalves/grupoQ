@@ -4,6 +4,6 @@ window.addEventListener('load', function () {
   env.production && (
     navigator
       .serviceWorker
-      .register('https://grupoq.store/sw.js')
+      .register(new URL('./sw', import.meta.url /* webpackChunkName: "sw" */))
   )
 })

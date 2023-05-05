@@ -7,5 +7,6 @@ import '@grupoq/reset'
 import '@grupoq/title'
 import '@grupoq/description'
 import '@grupoq/jsonld'
+import '@grupoq/serviceworker'
 
 import '@grupoq/home'

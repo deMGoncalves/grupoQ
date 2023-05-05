@@ -1,3 +1,4 @@
+import container from '@grupoq/container'
 import h from '@grupoq/h'
 import Logo from '@grupoq/logo'
 import style from './style'
@@ -5,9 +6,9 @@ import style from './style'
 function component () {
   return (
     <header className={style.header}>
-      <div className={style.header__container}>
+      <container.Div className={style.header__container}>
         <Logo />
-      </div>
+      </container.Div>
     </header>
   )
 }

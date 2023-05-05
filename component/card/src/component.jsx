@@ -5,11 +5,11 @@ import text from '@grupoq/text'
 
 function component (card) {
   return (
-    <section className={style.card}>
+    <a className={style.card} href={card.url}>
       <Img className={style.card__image} src={card.image} />
-      <text.H1 master dark xxxs medium>{card.title}</text.H1>
+      <text.Strong master dark xxxs medium>{card.title}</text.Strong>
       <text.Data master dark xs bold>{card.price}</text.Data>
-    </section>
+    </a>
   )
 }
 

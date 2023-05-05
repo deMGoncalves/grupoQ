@@ -1,3 +1,4 @@
+import * as filter from '@grupoq/filter'
 import { paint } from '@grupoq/h'
 import { urlFor } from '@grupoq/router'
 import component from './component'
@@ -14,6 +15,7 @@ class Card {
     return (this.#image ??= 'fallback_1x1.png')
   }
 
+  @filter.money
   get price () {
     return (this.#price ??= 9999999)
   }

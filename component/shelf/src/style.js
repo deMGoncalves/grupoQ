@@ -5,6 +5,7 @@ export default styled`
     display: grid;
     gap: var(--spacing_inset-xs);
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
 
   @media (min-width: 769px) {

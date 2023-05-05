@@ -735,6 +735,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/http@workspace:.prelude/standard/http":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/http@workspace:.prelude/standard/http"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/img@workspace:.prelude/element/img":
   version: 0.0.0-use.local
   resolution: "@grupoq/img@workspace:.prelude/element/img"

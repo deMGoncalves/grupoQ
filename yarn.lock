@@ -687,9 +687,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/breadcrumb@workspace:component/breadcrumb":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/breadcrumb@workspace:component/breadcrumb"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/canonical@workspace:.prelude/pixel/canonical":
   version: 0.0.0-use.local
   resolution: "@grupoq/canonical@workspace:.prelude/pixel/canonical"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/container@workspace:.prelude/element/container":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/container@workspace:.prelude/element/container"
   languageName: unknown
   linkType: soft
 

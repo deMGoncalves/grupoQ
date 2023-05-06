@@ -1,17 +1,16 @@
 import Bag from './bag'
 import Breadcrumb from './breadcrumb'
 import Description from './description'
-import h, { Fragment } from '@grupoq/h'
-import Header from '@grupoq/header'
+import h from '@grupoq/h'
 import Image from './image'
 import Main from './main'
+import Master from '@grupoq/master'
 import Price from './price'
 import Title from './title'
 
 function component () {
   return (
-    <>
-      <Header />
+    <Master>
       <Breadcrumb />
       <Main>
         <Image />
@@ -20,7 +19,7 @@ function component () {
         <Price />
         <Bag />
       </Main>
-    </>
+    </Master>
   )
 }
 

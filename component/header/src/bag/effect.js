@@ -4,6 +4,7 @@ import magic from '@grupoq/magic'
 
 const effect = middleware(function (bag) {
   echo.on('bag:add', () => bag[effect.onChange]())
+  echo.on('bag:remove', () => bag[effect.onChange]())
 })
 
 Object.assign(effect, {

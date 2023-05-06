@@ -7,7 +7,9 @@ function component (bag) {
   return (
     <Side onClose={() => bag.close()} opened={bag.opened}>
       <Header onClose={() => bag.close()} />
-      <Shelf />
+      <Shelf>
+        {bag.products}
+      </Shelf>
     </Side>
   )
 }

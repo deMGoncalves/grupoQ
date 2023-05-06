@@ -1,8 +1,8 @@
 import * as filter from '@grupoq/filter'
 import { paint, repaint } from '@grupoq/h'
+import action from './action'
 import component from './component'
 import storage from './storage'
-import Stub from './stub'
 
 @paint(component)
 @storage
@@ -35,6 +35,15 @@ class Product {
     this.#count = count
   }
 
+  @action.remove
+  remove () {
+    const key = 'bag'
+    const bag = JSON.parse(localStorage.getItem(key) ?? '{}')
+    delete bag[this.#id]
+    localStorage.setItem(key, JSON.stringify(bag))
+    return this
+  }
+
   [storage.onError] (error) {
     console.log(error)
     return this
@@ -50,10 +59,6 @@ class Product {
 
   static create (data) {
     return new Product(...data)
-  }
-
-  static stub () {
-    return new Stub()
   }
 }
 

@@ -1,4 +1,3 @@
-import { params, urlFor } from '@grupoq/router'
 import jsonld from '@grupoq/jsonld'
 import interceptor from '@grupoq/interceptor'
 

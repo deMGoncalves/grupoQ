@@ -1,3 +1,4 @@
+import Bag from './bag'
 import container from '@grupoq/container'
 import h from '@grupoq/h'
 import Logo from './logo'
@@ -8,6 +9,7 @@ function component () {
     <header className={style.header}>
       <container.Div className={style.header__container}>
         <Logo />
+        <Bag />
       </container.Div>
     </header>
   )

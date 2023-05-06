@@ -1,4 +1,5 @@
 import { paint, repaint } from '@grupoq/h'
+import action from './action'
 import component from './component'
 import effect from './effect'
 
@@ -7,10 +8,12 @@ import effect from './effect'
 class Card {
   #id
 
+  @action.add
   add () {
-    const card = JSON.parse(localStorage.getItem('card') ?? '{}')
+    const key = 'card'
+    const card = JSON.parse(localStorage.getItem(key) ?? '{}')
     card[this.#id] ??= 1
-    localStorage.setItem('card', JSON.stringify(card))
+    localStorage.setItem(key, JSON.stringify(card))
     return this
   }
 

@@ -4,7 +4,7 @@ import magic from '@grupoq/magic'
 import middleware from '@grupoq/middleware'
 
 const storage = middleware(async function (product) {
-  const { error, data } = await http.get(`${process.env.API_HOST}/products/${params.id}`).json()
+  const { error, data } = await http.get(`${process.env.API_HOST}/products/${params.id}`).cache('force-cache').json()
   error
     ? product[storage.onError]?.(error)
     : product[storage.onResponse]?.(data)

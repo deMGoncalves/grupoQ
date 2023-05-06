@@ -693,6 +693,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/bag@workspace:component/bag":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/bag@workspace:component/bag"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/breadcrumb@workspace:component/breadcrumb":
   version: 0.0.0-use.local
   resolution: "@grupoq/breadcrumb@workspace:component/breadcrumb"
@@ -876,6 +882,12 @@ __metadata:
 "@grupoq/show@workspace:.prelude/directive/show":
   version: 0.0.0-use.local
   resolution: "@grupoq/show@workspace:.prelude/directive/show"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/side@workspace:.prelude/element/side":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/side@workspace:.prelude/element/side"
   languageName: unknown
   linkType: soft
 

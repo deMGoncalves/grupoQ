@@ -3,6 +3,7 @@ import Description from './description'
 import h, { Fragment } from '@grupoq/h'
 import Header from '@grupoq/header'
 import Main from './main'
+import Price from './price'
 import Title from './title'
 
 function component () {
@@ -13,6 +14,7 @@ function component () {
       <Main>
         <Title />
         <Description />
+        <Price />
       </Main>
     </>
   )

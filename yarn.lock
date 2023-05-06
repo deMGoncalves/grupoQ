@@ -813,6 +813,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/master@workspace:model/master":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/master@workspace:model/master"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/metro@workspace:.prelude/element/metro":
   version: 0.0.0-use.local
   resolution: "@grupoq/metro@workspace:.prelude/element/metro"

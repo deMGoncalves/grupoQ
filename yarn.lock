@@ -693,6 +693,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/button@workspace:.prelude/element/button":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/button@workspace:.prelude/element/button"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/canonical@workspace:.prelude/pixel/canonical":
   version: 0.0.0-use.local
   resolution: "@grupoq/canonical@workspace:.prelude/pixel/canonical"

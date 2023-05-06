@@ -4,7 +4,6 @@ import interceptor from '@grupoq/interceptor'
 
 export default interceptor(function (args, next) {
   const [product] = args
-  console.log(product)
   jsonld.push({
     '@id': `#${product.id}`,
     '@type': 'Product',

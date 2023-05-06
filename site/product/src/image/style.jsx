@@ -13,7 +13,7 @@ export default styled`
     border-radius: var(--border-radius-sm);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     .image__container {
       float: left;
       width: calc(40% - 8px);

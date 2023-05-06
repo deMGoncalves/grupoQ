@@ -5,15 +5,15 @@ import effect from './effect'
 
 @paint(component)
 @effect
-class Card {
+class Bag {
   #id
 
   @action.add
   add () {
-    const key = 'card'
-    const card = JSON.parse(localStorage.getItem(key) ?? '{}')
-    card[this.#id] ??= 1
-    localStorage.setItem(key, JSON.stringify(card))
+    const key = 'bag'
+    const bag = JSON.parse(localStorage.getItem(key) ?? '{}')
+    bag[this.#id] ??= 1
+    localStorage.setItem(key, JSON.stringify(bag))
     return this
   }
 
@@ -24,4 +24,4 @@ class Card {
   }
 }
 
-export default Card
+export default Bag

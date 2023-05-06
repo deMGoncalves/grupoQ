@@ -1,5 +1,5 @@
+import Bag from './bag'
 import Breadcrumb from './breadcrumb'
-import Card from './card'
 import Description from './description'
 import h, { Fragment } from '@grupoq/h'
 import Header from '@grupoq/header'
@@ -18,7 +18,7 @@ function component () {
         <Title />
         <Description />
         <Price />
-        <Card />
+        <Bag />
       </Main>
     </>
   )

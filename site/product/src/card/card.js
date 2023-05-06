@@ -8,6 +8,9 @@ class Card {
   #id
 
   add () {
+    const card = JSON.parse(localStorage.getItem('card') ?? '{}')
+    card[this.#id] ??= 1
+    localStorage.setItem('card', JSON.stringify(card))
     return this
   }
 

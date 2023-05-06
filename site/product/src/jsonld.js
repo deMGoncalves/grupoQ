@@ -30,7 +30,7 @@ export default interceptor(function (args, next) {
       name: product.title,
       url: urlFor('product', params)
     },
-    name: global.product?.title,
+    name: product.title,
     offers: {
       '@type': 'Offer',
       priceCurrency: 'BRL',

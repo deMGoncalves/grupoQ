@@ -6,7 +6,7 @@ function middleware (functionRef) {
           ? new ClassRef(...arguments)
           : ClassRef(...arguments)
 
-        functionRef(instance)
+        setImmediate(() => functionRef(instance))
         return instance
       },
       {

@@ -1,3 +1,4 @@
+import Bag from '@grupoq/bag'
 import h, { Fragment } from '@grupoq/h'
 import Header from '@grupoq/header'
 import Main from './main'
@@ -10,6 +11,7 @@ function component () {
       <Main>
         <Shelf />
       </Main>
+      <Bag />
     </>
   )
 }

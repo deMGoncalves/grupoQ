@@ -687,6 +687,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/badge@workspace:.prelude/element/badge":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/badge@workspace:.prelude/element/badge"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/breadcrumb@workspace:component/breadcrumb":
   version: 0.0.0-use.local
   resolution: "@grupoq/breadcrumb@workspace:component/breadcrumb"

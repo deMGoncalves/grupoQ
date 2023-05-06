@@ -6,7 +6,7 @@ import style from './style'
 
 function component (bag) {
   return (
-    <button className={style.bag}>
+    <button className={style.bag} onClick={() => bag.open()}>
       <Img className={style.bag__icon} src={icon} />
       <Badge className={style.bag__count}>{bag.count}</Badge>
     </button>

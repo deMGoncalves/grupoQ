@@ -5,15 +5,29 @@ import interceptor from '@grupoq/interceptor'
 export default interceptor(function (args, next) {
   const [product] = args
   jsonld.push({
-    '@id': '#webpage',
-    '@type': 'WebPage',
+    '@id': `#${product.id}`,
+    '@type': 'Product',
+    category: product.category,
     description: product.description,
-    inLanguage: 'pt-BR',
-    isPartOf: {
-      '@id': '#website'
+    image: product.image,
+    mainEntityOfPage: {
+      '@id': '#webpage',
+      '@type': 'WebPage',
+      breadcrumb: {
+        '@id': '#breadcrumb'
+      },
+      description: product.description,
+      inLanguage: 'pt-BR',
+      isPartOf: {
+        '@id': '#website'
+      },
+      name: product.title,
+      url: urlFor('product', params)
     },
-    name: product.title,
-    url: urlFor('product', params)
+    name: global.product?.title,
+    offers: {
+      '@id': '#offers'
+    }
   })
   return next(...args)
 })

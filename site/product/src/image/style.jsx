@@ -12,4 +12,11 @@ export default styled`
     background-color: var(--color-pure-white);
     border-radius: var(--border-radius-sm);
   }
+
+  @media (min-width: 768px) {
+    .image__container {
+      float: left;
+      width: calc(40% - 8px);
+    }
+  }
 `

@@ -6,6 +6,6 @@ const add = interceptor(function (args, next) {
   return next(...args)
 })
 
-export {
+export default {
   add
 }

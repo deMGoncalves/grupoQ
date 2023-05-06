@@ -795,12 +795,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@grupoq/logo@workspace:component/logo":
-  version: 0.0.0-use.local
-  resolution: "@grupoq/logo@workspace:component/logo"
-  languageName: unknown
-  linkType: soft
-
 "@grupoq/magic@workspace:.prelude/standard/magic":
   version: 0.0.0-use.local
   resolution: "@grupoq/magic@workspace:.prelude/standard/magic"

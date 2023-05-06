@@ -1,6 +1,6 @@
 import container from '@grupoq/container'
 import h from '@grupoq/h'
-import Logo from '@grupoq/logo'
+import Logo from './logo'
 import style from './style'
 
 function component () {

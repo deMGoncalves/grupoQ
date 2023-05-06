@@ -1,11 +1,11 @@
 import { paint, repaint } from '@grupoq/h'
+import action from './action'
 import component from './component'
-import effect from './effect'
 import Product from './product'
 import storage from './storage'
 
 @paint(component)
-@effect
+@action
 @storage
 class Bag {
   #opened
@@ -26,7 +26,7 @@ class Bag {
   }
 
   @repaint
-  [effect.open] () {
+  [action.open] () {
     this.#opened = true
     return this
   }

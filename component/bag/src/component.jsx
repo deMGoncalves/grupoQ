@@ -1,6 +1,8 @@
+import Checkout from './checkout'
 import h from '@grupoq/h'
 import Header from './header'
 import Shelf from './shelf'
+import Show from '@grupoq/show'
 import Side from '@grupoq/side'
 
 function component (bag) {
@@ -9,6 +11,9 @@ function component (bag) {
       <Header onClose={() => bag.close()} />
       <Shelf>
         {bag.products}
+        <Show when={bag.products.length}>
+          <Checkout />
+        </Show>
       </Shelf>
     </Side>
   )

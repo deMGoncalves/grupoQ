@@ -15,7 +15,7 @@ export default styled`
   .product__image {
     aspect-ratio: 3 / 4;
     object-fit: contain;
-    padding: var(--spacing_inset-lg);
+    padding: var(--spacing_inset-md);
     width: 100%;
   }
 `

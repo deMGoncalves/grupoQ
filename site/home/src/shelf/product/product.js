@@ -17,7 +17,7 @@ class Product {
 
   @filter.money
   get price () {
-    return (this.#price ??= 9999999)
+    return (this.#price ??= 9999999.99)
   }
 
   get title () {

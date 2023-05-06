@@ -10,7 +10,7 @@ class Price {
 
   @filter.money
   get value () {
-    return (this.#value ??= 999999)
+    return (this.#value ??= 9999999.99)
   }
 
   @repaint

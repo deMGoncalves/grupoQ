@@ -11,5 +11,6 @@ import '@grupoq/jsonld'
 
 import '@grupoq/home'
 import '@grupoq/product'
+import '@grupoq/checkout'
 
 import '@grupoq/serviceworker'

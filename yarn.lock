@@ -717,6 +717,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/checkout@workspace:site/checkout":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/checkout@workspace:site/checkout"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/container@workspace:.prelude/element/container":
   version: 0.0.0-use.local
   resolution: "@grupoq/container@workspace:.prelude/element/container"

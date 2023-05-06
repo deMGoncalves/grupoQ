@@ -1,18 +1,15 @@
-import Bag from '@grupoq/bag'
-import h, { Fragment } from '@grupoq/h'
-import Header from '@grupoq/header'
+import h from '@grupoq/h'
 import Main from './main'
+import Master from '@grupoq/master'
 import Shelf from './shelf'
 
 function component () {
   return (
-    <>
-      <Header />
+    <Master>
       <Main>
         <Shelf />
       </Main>
-      <Bag />
-    </>
+    </Master>
   )
 }
 

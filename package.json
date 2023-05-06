@@ -59,6 +59,7 @@
       ".prelude/polyfill/*",
       ".prelude/standard/*",
       "component/*",
+      "model/*",
       "site/*"
     ]
   }

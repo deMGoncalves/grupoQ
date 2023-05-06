@@ -26,7 +26,7 @@ class Bag {
   }
 
   @repaint
-  [effect.onChange] () {
+  [effect.open] () {
     this.#opened = true
     return this
   }

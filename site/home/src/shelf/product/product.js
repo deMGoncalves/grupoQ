@@ -2,6 +2,7 @@ import * as filter from '@grupoq/filter'
 import { paint } from '@grupoq/h'
 import { urlFor } from '@grupoq/router'
 import component from './component'
+import jsonld from './jsonld'
 import Stub from './stub'
 
 @paint(component)
@@ -35,6 +36,7 @@ class Product {
     this.#title = title
   }
 
+  @jsonld
   static create (data) {
     return new Product(
       data.id,

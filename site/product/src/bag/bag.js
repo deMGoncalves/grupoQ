@@ -6,20 +6,21 @@ import effect from './effect'
 @paint(component)
 @effect
 class Bag {
-  #id
+  #product
 
   @action.add
   add () {
     const key = 'bag'
     const bag = JSON.parse(localStorage.getItem(key) ?? '{}')
-    bag[this.#id] ??= 1
+    Object.assign(this.#product, { count: (bag[this.#product.id]?.count ?? 1) })
+    Object.assign(bag, { [this.#product.id]: this.#product })
     localStorage.setItem(key, JSON.stringify(bag))
     return this
   }
 
   @repaint
   [effect.onChange] (product) {
-    this.#id = product.id
+    this.#product = product
     return this
   }
 }

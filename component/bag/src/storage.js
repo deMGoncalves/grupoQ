@@ -5,7 +5,7 @@ import magic from '@grupoq/magic'
 const storage = middleware(function (target) {
   function update () {
     const bag = JSON.parse(localStorage.getItem('bag') ?? '{}')
-    const products = Object.entries(bag)
+    const products = Object.values(bag)
     target[storage.onResponse](products)
   }
 

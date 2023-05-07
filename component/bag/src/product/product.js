@@ -1,11 +1,10 @@
 import * as filter from '@grupoq/filter'
-import { paint, repaint } from '@grupoq/h'
+import { paint } from '@grupoq/h'
 import action from './action'
 import component from './component'
-import storage from './storage'
+import magic from '@grupoq/magic'
 
 @paint(component)
-@storage
 class Product {
   #count
   #id
@@ -30,9 +29,11 @@ class Product {
     return (this.#title ??= 'ND')
   }
 
-  constructor (id, count) {
+  constructor (id, image, price, title) {
     this.#id = id
-    this.#count = count
+    this.#image = image
+    this.#price = price
+    this.#title = title
   }
 
   @action.remove
@@ -44,21 +45,17 @@ class Product {
     return this
   }
 
-  [storage.onError] (error) {
-    console.log(error)
-    return this
-  }
-
-  @repaint
-  [storage.onResponse] (data) {
-    this.#image = data.image
-    this.#price = data.price
-    this.#title = data.title
-    return this
+  [magic.sum] () {
+    return this.#price ?? 0
   }
 
   static create (data) {
-    return new Product(...data)
+    return new Product(
+      data.id,
+      data.image,
+      data.price,
+      data.title
+    )
   }
 }
 

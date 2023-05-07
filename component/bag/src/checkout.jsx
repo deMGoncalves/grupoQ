@@ -1,9 +1,10 @@
+import { urlFor } from '@grupoq/router'
 import Button from '@grupoq/button'
 import h from '@grupoq/h'
 
-function component () {
+function component (_props, children) {
   return (
-    <Button>Checkout</Button>
+    <Button onClick={() => location.assign(urlFor('checkout'))}>Pay {children}</Button>
   )
 }
 

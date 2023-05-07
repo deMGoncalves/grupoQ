@@ -12,7 +12,7 @@ function component (bag) {
       <Shelf>
         {bag.products}
         <Show when={bag.products.length}>
-          <Checkout />
+          <Checkout>{bag.total}</Checkout>
         </Show>
       </Shelf>
     </Side>

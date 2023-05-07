@@ -1,3 +1,5 @@
+import * as f from '@grupoq/f'
+import * as filter from '@grupoq/filter'
 import { paint, repaint } from '@grupoq/h'
 import action from './action'
 import component from './component'
@@ -17,6 +19,11 @@ class Bag {
 
   get products () {
     return (this.#products ??= [])
+  }
+
+  @filter.money
+  get total () {
+    return f.sum(...this.products)
   }
 
   @repaint

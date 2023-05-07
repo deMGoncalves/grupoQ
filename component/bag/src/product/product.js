@@ -1,5 +1,5 @@
 import * as filter from '@grupoq/filter'
-import { paint } from '@grupoq/h'
+import { paint, repaint } from '@grupoq/h'
 import action from './action'
 import component from './component'
 import magic from '@grupoq/magic'
@@ -11,6 +11,10 @@ class Product {
   #image
   #price
   #title
+
+  get count () {
+    return (this.#count ??= 0)
+  }
 
   get id () {
     return this.#id
@@ -29,19 +33,39 @@ class Product {
     return (this.#title ??= 'ND')
   }
 
-  constructor (id, image, price, title) {
+  constructor (id, count, image, price, title) {
+    this.#count = count
     this.#id = id
     this.#image = image
     this.#price = price
     this.#title = title
   }
 
+  @repaint
+  @action.update
+  add () {
+    this.#count = Math.min(10, (this.count + 1))
+    const bag = JSON.parse(localStorage.getItem('bag') ?? '{}')
+    bag[this.#id].count = this.count
+    localStorage.setItem('bag', JSON.stringify(bag))
+    return this
+  }
+
+  @repaint
+  @action.update
+  sub () {
+    this.#count = Math.max(1, (this.count - 1))
+    const bag = JSON.parse(localStorage.getItem('bag') ?? '{}')
+    bag[this.#id].count = this.count
+    localStorage.setItem('bag', JSON.stringify(bag))
+    return this
+  }
+
   @action.remove
   remove () {
-    const key = 'bag'
-    const bag = JSON.parse(localStorage.getItem(key) ?? '{}')
+    const bag = JSON.parse(localStorage.getItem('bag') ?? '{}')
     delete bag[this.#id]
-    localStorage.setItem(key, JSON.stringify(bag))
+    localStorage.setItem('bag', JSON.stringify(bag))
     return this
   }
 
@@ -52,6 +76,7 @@ class Product {
   static create (data) {
     return new Product(
       data.id,
+      data.count,
       data.image,
       data.price,
       data.title

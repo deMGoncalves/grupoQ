@@ -6,6 +6,12 @@ const remove = interceptor(function (args, next) {
   return next(...args)
 })
 
+const update = interceptor(function (args, next) {
+  setImmediate(() => echo.emit('bag:update'))
+  return next(...args)
+})
+
 export default {
-  remove
+  remove,
+  update
 }

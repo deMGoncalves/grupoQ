@@ -783,6 +783,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/hide@workspace:.prelude/directive/hide":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/hide@workspace:.prelude/directive/hide"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/home@workspace:site/home":
   version: 0.0.0-use.local
   resolution: "@grupoq/home@workspace:site/home"
@@ -813,6 +819,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/lazy@workspace:.prelude/directive/lazy":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/lazy@workspace:.prelude/directive/lazy"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/magic@workspace:.prelude/standard/magic":
   version: 0.0.0-use.local
   resolution: "@grupoq/magic@workspace:.prelude/standard/magic"
@@ -840,6 +852,12 @@ __metadata:
 "@grupoq/overload@workspace:.prelude/standard/overload":
   version: 0.0.0-use.local
   resolution: "@grupoq/overload@workspace:.prelude/standard/overload"
+  languageName: unknown
+  linkType: soft
+
+"@grupoq/override@workspace:.prelude/standard/override":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/override@workspace:.prelude/standard/override"
   languageName: unknown
   linkType: soft
 

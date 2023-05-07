@@ -46,7 +46,7 @@ class Product {
   }
 
   [magic.sum] () {
-    return this.#price ?? 0
+    return (this.#price ?? 0) * (this.#count ?? 1)
   }
 
   static create (data) {

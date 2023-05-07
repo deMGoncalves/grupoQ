@@ -1,4 +1,4 @@
-import Bag from '@grupoq/bag'
+import Bag from './bag'
 import h, { Fragment } from '@grupoq/h'
 import Header from '@grupoq/header'
 

@@ -44,7 +44,7 @@ class Product {
   @repaint
   @action.update
   add () {
-    this.#count = Math.min(10, (this.count + 1))
+    this.#count = Math.min(9, (this.count + 1))
     const bag = JSON.parse(localStorage.getItem('bag') ?? '{}')
     bag[this.#id].count = this.count
     localStorage.setItem('bag', JSON.stringify(bag))

@@ -19,12 +19,27 @@ export default styled`
 
   .product__title,
   .product__price,
-  .product__remove {
+  .product__tools {
     float: right;
     width: calc(70% - 8px);
   }
 
-  .product__remove {
+  .product__tools {
+    align-items: center;
+    display: flex;
+    gap: var(--spacing_inset-xs);
     margin-top: var(--spacing_inset-xs);
+  }
+
+  .product__button {
+    align-items: center;
+    background-color: var(--color-master-lighter);
+    border: none;
+    border-radius: var(--border-radius-circular);
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    line-height: 0;
+    width: 32px;
   }
 `

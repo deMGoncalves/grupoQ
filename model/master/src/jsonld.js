@@ -6,9 +6,15 @@ export default middleware(function () {
     '@id': '#website',
     '@type': 'WebSite',
     description: 'A plataforma prática para o preparo para concursos públicos, que integra todas as etapas do estudo. Com 450 mil assinantes, é a maior edtech do Brasil.',
-    name: 'grupoq',
+    name: 'Grupo Q',
     potentialAction: {
-      '@id': '#searchaction'
+      '@id': '#searchaction',
+      '@type': 'SearchAction',
+      'query-input': 'required name=search_term_string',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://grupoq.pages.dev/search?q={search_term_string}'
+      }
     },
     publisher: {
       '@id': '#organization'

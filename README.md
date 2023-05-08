@@ -55,6 +55,8 @@ Essa estratégia de divisão de arquivos permite que a aplicação carregue mais
 
 ![chuncks](https://user-images.githubusercontent.com/35740192/236910629-292a5fa9-1e4e-48f5-b46b-ecb74583706b.png)
 
+- [Report](https://grupoq.pages.dev/report)
+
 ## Manifesto
 
 O manifesto é uma declaração de princípios que guiam o desenvolvimento do projeto:

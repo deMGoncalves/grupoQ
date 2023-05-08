@@ -825,6 +825,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grupoq/local@workspace:.prelude/standard/local":
+  version: 0.0.0-use.local
+  resolution: "@grupoq/local@workspace:.prelude/standard/local"
+  languageName: unknown
+  linkType: soft
+
 "@grupoq/magic@workspace:.prelude/standard/magic":
   version: 0.0.0-use.local
   resolution: "@grupoq/magic@workspace:.prelude/standard/magic"

@@ -7,8 +7,8 @@ Ao usar o .prelude como um workspace, os desenvolvedores podem começar um novo 
 ## Estrutura do workspace
 
 -  [../](https://github.com/deMGoncalves/grupoQ/blob/master/README.md)
--  [artifact]()
--  [directive]()
+-  [artifact](https://github.com/deMGoncalves/grupoQ/blob/master/.prelude/artifact/README.md)
+-  [directive](https://github.com/deMGoncalves/grupoQ/blob/master/.prelude/directive/README.md)
 -  [element]()
 -  [polyfill]()
 -  [standard]()

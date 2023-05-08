@@ -64,7 +64,9 @@ class Product {
 
   @action.remove
   remove () {
-    delete local.bag[this.#id]
+    const bag = local.bag
+    delete bag[this.#id]
+    local.bag = bag
     return this
   }
 

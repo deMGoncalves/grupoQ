@@ -15,9 +15,10 @@ class Bag {
 
   @action.add
   add () {
-    local.bag ??= {}
-    local.bag[this.#id] ??= this.#product
-    local.bag[this.#id].count ??= 1
+    const bag = (local.bag ??= {})
+    bag[this.#id] ??= this.#product
+    bag[this.#id].count ??= 1
+    local.bag = bag
     return this
   }
 

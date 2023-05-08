@@ -14,7 +14,7 @@ class Bag {
   }
 
   static get length () {
-    return Object.keys(local.bag ?? {})
+    return Object.keys(local.bag ?? {}).length
   }
 
   open () {

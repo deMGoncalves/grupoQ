@@ -18,6 +18,14 @@ Em resumo, o projeto busca simplificar a forma como desenvolvemos aplicações w
 -  [model]()
 -  [site]()
 
+## Screenshots
+
+A seção de screenshots do projeto mostra algumas imagens da aplicação em diferentes momentos e telas, permitindo uma visão geral do visual e da usabilidade da plataforma. As screenshots mostram desde a tela inicial até páginas internas, bem como a exibição de produtos, o carrinho de compras e a finalização do pedido.
+
+As imagens foram selecionadas para ilustrar as principais funcionalidades do projeto e sua interface limpa e intuitiva. Além disso, as screenshots podem servir como uma fonte de inspiração para outros desenvolvedores, mostrando como a implementação de boas práticas de design e desenvolvimento podem resultar em uma experiência de usuário agradável e eficiente.
+
+![screenshots](https://user-images.githubusercontent.com/35740192/236906267-12a44954-f540-4479-8a63-943e6e0e1154.png)
+
 ## Manifesto
 
 O manifesto é uma declaração de princípios que guiam o desenvolvimento do projeto:

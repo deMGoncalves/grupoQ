@@ -41,6 +41,20 @@ Todas essas técnicas foram aplicadas de forma cuidadosa e planejada, com o obje
 - [Home](https://pagespeed.web.dev/analysis/https-grupoq-pages-dev/yng79kuhw7?form_factor=desktop)
 - [Product](https://pagespeed.web.dev/analysis/https-grupoq-pages-dev-6/dm79oocvpx?form_factor=desktop)
 
+## Chuncks
+
+A estratégia de divisão de arquivos adotada neste projeto visa melhorar o desempenho e a velocidade de carregamento das páginas. O tamanho total dos arquivos é de 16,62 KB, o que é considerado relativamente pequeno.
+
+O arquivo principal, "app.0f58a7188d07b3589f5b.js", contém a maior parte do código da aplicação, com 13,27 KB. Ele é responsável por carregar a página inicial e todos os componentes necessários para o funcionamento correto da página.
+
+Já os outros arquivos, "bag.939597f405c6b8d8b029.js" e "checkout.c69cc6718fe50428e908.js", contêm código específico para as páginas do carrinho de compras e finalização da compra, respectivamente. Eles são carregados apenas quando o usuário acessa essas páginas, reduzindo o tempo de carregamento da página inicial.
+
+Além disso, há o arquivo "sw.fdc696cb211a36501d97.js", que contém o código para o Service Worker da aplicação. Ele é carregado separadamente para garantir que a funcionalidade do Service Worker esteja sempre disponível, mesmo em casos de lentidão na conexão de internet.
+
+Essa estratégia de divisão de arquivos permite que a aplicação carregue mais rapidamente e melhore a experiência do usuário, tornando a navegação mais ágil e satisfatória.
+
+![chuncks](https://user-images.githubusercontent.com/35740192/236910629-292a5fa9-1e4e-48f5-b46b-ecb74583706b.png)
+
 ## Manifesto
 
 O manifesto é uma declaração de princípios que guiam o desenvolvimento do projeto:

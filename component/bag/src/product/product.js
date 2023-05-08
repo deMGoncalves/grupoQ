@@ -44,9 +44,9 @@ class Product {
     this.#title = title
   }
 
-  @repaint
   @storage.update
   @action.update
+  @repaint
   add () {
     this.#count = f
       .from(this.count)
@@ -56,9 +56,9 @@ class Product {
     return this
   }
 
-  @repaint
   @storage.update
   @action.update
+  @repaint
   sub () {
     this.#count = f
       .from(this.count)

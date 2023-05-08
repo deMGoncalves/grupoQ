@@ -2,6 +2,7 @@ import { paint, repaint } from '@grupoq/h'
 import component from './component'
 import echo from '@grupoq/echo'
 import effect from './effect'
+import local from '@grupoq/local'
 
 @paint(component)
 @effect
@@ -13,7 +14,7 @@ class Bag {
   }
 
   static get length () {
-    return Object.keys(JSON.parse(localStorage.getItem('bag') ?? '{}')).length
+    return Object.keys(local.bag ?? {})
   }
 
   open () {

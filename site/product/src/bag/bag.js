@@ -1,7 +1,7 @@
 import { paint, repaint } from '@grupoq/h'
 import action from './action'
 import component from './component'
-import effect from './effect'
+import effect from '../effect'
 import local from '@grupoq/local'
 
 @paint(component)

@@ -1,7 +1,7 @@
 import { component, Path } from '@grupoq/breadcrumb'
 import { paint, repaint } from '@grupoq/h'
 import { params, urlFor } from '@grupoq/router'
-import effect from './effect'
+import effect from '../effect'
 import jsonld from './jsonld'
 
 @paint(component)

@@ -1,6 +1,6 @@
 import { paint, repaint } from '@grupoq/h'
 import component from './component'
-import effect from './effect'
+import effect from '../effect'
 
 @paint(component)
 @effect

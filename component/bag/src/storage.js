@@ -12,6 +12,7 @@ const storage = middleware(function (bag) {
 
   echo.on('bag:add', pull)
   echo.on('bag:update', pull)
+  echo.on('bag:remove', pull)
 
   pull()
 })

@@ -34,7 +34,6 @@ class Bag {
 
   @storage.remove
   @action.remove
-  @repaint
   remove (product) {
     f.remove(this.#products, product)
     return this

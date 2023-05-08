@@ -9,47 +9,39 @@ import storage from './storage'
 @paint(component)
 class Product {
   #bag
-  #count
-  #id
-  #image
-  #price
-  #title
+  #data
 
   get count () {
-    return (this.#count ??= 0)
+    return (this.#data.count ??= 0)
   }
 
   get id () {
-    return this.#id
+    return this.#data.id
   }
 
   get image () {
-    return (this.#image ??= 'fallback_1x1.png')
+    return (this.#data.image ??= 'fallback_1x1.png')
   }
 
   @filter.money
   get price () {
-    return (this.#price ??= 9999999.99)
+    return (this.#data.price ??= 9999999.99)
   }
 
   get title () {
-    return (this.#title ??= 'ND')
+    return (this.#data.title ??= 'ND')
   }
 
-  constructor (id, count, image, price, title, bag) {
+  constructor (data, bag) {
     this.#bag = bag
-    this.#count = count
-    this.#id = id
-    this.#image = image
-    this.#price = price
-    this.#title = title
+    this.#data = data
   }
 
   @storage.update
   @action.update
   @repaint
   add () {
-    this.#count = f
+    this.#data.count = f
       .from(this.count)
       .pipe(f.inc(f.__))
       .pipe(f.min(9, f.__))
@@ -61,7 +53,7 @@ class Product {
   @action.update
   @repaint
   sub () {
-    this.#count = f
+    this.#data.count = f
       .from(this.count)
       .pipe(f.dec(f.__))
       .pipe(f.max(1, f.__))
@@ -75,20 +67,11 @@ class Product {
   }
 
   [magic.sum] () {
-    return (this.#price ?? 0) * (this.#count ?? 1)
+    return (this.#data.price ?? 0) * (this.#data.count ?? 1)
   }
 
   static create (bag) {
-    return (data) => (
-      new Product(
-        data.id,
-        data.count,
-        data.image,
-        data.price,
-        data.title,
-        bag
-      )
-    )
+    return (data) => new Product(data, bag)
   }
 }
 

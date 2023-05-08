@@ -11,6 +11,6 @@ Em resumo, o workspace "directives" é responsável por gerenciar pacotes que of
 ## Estrutura do workspace
 
 -  [../](https://github.com/deMGoncalves/grupoQ/blob/master/.prelude/README.md)
--  [hide]()
+-  [hide](https://github.com/deMGoncalves/grupoQ/blob/master/.prelude/directive/hide/README.md)
 -  [lazy]()
 -  [show]()

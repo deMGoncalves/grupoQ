@@ -1,4 +1,4 @@
-const local = new Proxy({}, {
+export default new Proxy({}, {
   get (_target, key) {
     const value = localStorage.getItem(key)
     return value

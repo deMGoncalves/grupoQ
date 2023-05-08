@@ -3,12 +3,12 @@ import * as filter from '@grupoq/filter'
 import { paint, repaint } from '@grupoq/h'
 import action from './action'
 import component from './component'
-import local from '@grupoq/local'
 import magic from '@grupoq/magic'
 import storage from './storage'
 
 @paint(component)
 class Product {
+  #bag
   #count
   #id
   #image
@@ -36,7 +36,8 @@ class Product {
     return (this.#title ??= 'ND')
   }
 
-  constructor (id, count, image, price, title) {
+  constructor (id, count, image, price, title, bag) {
+    this.#bag = bag
     this.#count = count
     this.#id = id
     this.#image = image
@@ -68,11 +69,8 @@ class Product {
     return this
   }
 
-  @action.remove
   remove () {
-    const bag = local.bag
-    delete bag[this.#id]
-    local.bag = bag
+    this.#bag.remove(this)
     return this
   }
 
@@ -80,13 +78,16 @@ class Product {
     return (this.#price ?? 0) * (this.#count ?? 1)
   }
 
-  static create (data) {
-    return new Product(
-      data.id,
-      data.count,
-      data.image,
-      data.price,
-      data.title
+  static create (bag) {
+    return (data) => (
+      new Product(
+        data.id,
+        data.count,
+        data.image,
+        data.price,
+        data.title,
+        bag
+      )
     )
   }
 }

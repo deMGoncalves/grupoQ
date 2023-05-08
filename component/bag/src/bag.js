@@ -32,6 +32,14 @@ class Bag {
     return this
   }
 
+  @storage.remove
+  @action.remove
+  @repaint
+  remove (product) {
+    f.remove(this.#products, product)
+    return this
+  }
+
   @repaint
   [action.open] () {
     this.#opened = true
@@ -40,7 +48,7 @@ class Bag {
 
   @repaint
   [storage.onResponse] (products) {
-    this.#products = products.map(Product.create)
+    this.#products = products.map(Product.create(this))
     return this
   }
 }

@@ -1,21 +1,26 @@
+import Card from './card'
+import Command from './command'
+import Count from './count'
 import h from '@grupoq/h'
-import Img from '@grupoq/img'
-import style from './style'
-import text from '@grupoq/text'
+import Image from './image'
+import Price from './price'
+import Remove from './remove'
+import Title from './title'
+import Tools from './tools'
 
 function component (product) {
   return (
-    <div className={style.product}>
-      <Img className={style.product__image} src={product.image} />
-      <text.Strong className={style.product__title} master dark xxxs medium>{product.title}</text.Strong>
-      <text.Data className={style.product__price} master dark xs bold>{product.price}</text.Data>
-      <div className={style.product__tools}>
-        <button className={style.product__button} onClick={() => product.sub()}>-</button>
-        <text.Span master dark xs bold>{product.count}</text.Span>
-        <button className={style.product__button} onClick={() => product.add()}>+</button>
-        <text.A onClick={() => product.remove()} danger dark xxs medium>Remove</text.A>
-      </div>
-    </div>
+    <Card>
+      <Image src={product.image} />
+      <Title>{product.title}</Title>
+      <Price>{product.price}</Price>
+      <Tools>
+        <Command onClick={() => product.sub()}>-</Command>
+        <Count>{product.count}</Count>
+        <Command onClick={() => product.add()}>+</Command>
+        <Remove onClick={() => product.remove()} />
+      </Tools>
+    </Card>
   )
 }
 

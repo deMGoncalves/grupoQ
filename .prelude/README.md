@@ -6,6 +6,7 @@ Ao usar o .prelude como um workspace, os desenvolvedores podem começar um novo 
 
 ## Estrutura do projeto
 
+-  [../](https://github.com/deMGoncalves/grupoQ/blob/master/README.md)
 -  [artifact]()
 -  [directive]()
 -  [element]()

@@ -163,6 +163,16 @@ yarn start
 
 5.  Agora, você pode acessar a aplicação em seu navegador, acessando a URL [http://localhost:5000/](http://localhost:5000/).
 
+## Deploy
+
+O processo de deploy do projeto foi realizado utilizando o Cloudflare Pages, uma plataforma de hospedagem e deploy de aplicações web que oferece uma rede global de distribuição de conteúdo (CDN) para acelerar o carregamento das páginas.
+
+O deploy é realizado automaticamente após cada push no repositório do GitHub, o que significa que qualquer atualização no código é imediatamente refletida na versão online da aplicação. O processo de deploy é iniciado com a inicialização do ambiente de build, seguido pela clonagem do repositório git e construção da aplicação.
+
+Após a construção da aplicação, o Cloudflare Pages realiza o deploy para sua rede global de servidores, garantindo que a aplicação seja carregada o mais rápido possível em qualquer parte do mundo. Todo o processo leva apenas alguns segundos, garantindo que as atualizações do projeto sejam entregues aos usuários finais com rapidez e eficiência.
+
+![image](https://user-images.githubusercontent.com/35740192/236913661-13b5b08a-2f04-44cd-a170-3cafdf2b8878.png)
+
 
 ## Licença
 

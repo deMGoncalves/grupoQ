@@ -93,6 +93,8 @@ As unidades construtivas do projeto são:
     -  **State**: Responsável por representar o estado da aplicação.
 3.  **Advice**: Responsável por gerenciar aspectos transversais da aplicação, como logs, métricas e segurança.
 
+- [Uma nova visão sobre modularidade e componentes javascript](https://dev.to/demgoncalves/components-469o)
+
 ## Características
 
 -  Leve e de fácil utilização

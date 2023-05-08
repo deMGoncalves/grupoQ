@@ -26,6 +26,12 @@ As imagens foram selecionadas para ilustrar as principais funcionalidades do pro
 
 ![screenshots](https://user-images.githubusercontent.com/35740192/236906267-12a44954-f540-4479-8a63-943e6e0e1154.png)
 
+# PWA
+
+O aplicativo é um Progressive Web App, o que significa que ele pode ser acessado diretamente de um navegador da web e pode ser instalado como um aplicativo nativo em um dispositivo móvel. Ele oferece aos usuários uma experiência de usuário rápida e suave, mesmo em conexões de rede lentas, e possui recursos como notificações push, armazenamento em cache para acesso offline e a capacidade de ser adicionado à tela inicial do dispositivo para acesso rápido. Como um PWA, o aplicativo pode ser usado em uma variedade de plataformas, incluindo desktops, laptops, tablets e dispositivos móveis, tornando-o acessível para uma ampla gama de usuários. Além disso, como é acessado diretamente por meio de um navegador da web, não é necessário fazer o download e instalação de um aplicativo nativo separado, economizando espaço no armazenamento do dispositivo.
+
+![image 10](https://user-images.githubusercontent.com/35740192/236915049-a6fad606-3c79-4bae-b5bd-ee20d6424777.png)
+
 ## Performance (Mobile vs Desktop)
 
 A performance é um aspecto crucial para o sucesso de qualquer aplicação web. Neste projeto, foram adotadas diversas técnicas para garantir que a experiência do usuário seja a mais fluída possível, tanto na página inicial quanto na página de produtos.

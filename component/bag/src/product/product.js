@@ -1,9 +1,11 @@
+import * as f from '@grupoq/f'
 import * as filter from '@grupoq/filter'
 import { paint, repaint } from '@grupoq/h'
 import action from './action'
 import component from './component'
 import local from '@grupoq/local'
 import magic from '@grupoq/magic'
+import storage from './storage'
 
 @paint(component)
 class Product {
@@ -43,22 +45,26 @@ class Product {
   }
 
   @repaint
+  @storage.update
   @action.update
   add () {
-    this.#count = Math.min(9, (this.count + 1))
-    const bag = JSON.parse(localStorage.getItem('bag') ?? '{}')
-    bag[this.#id].count = this.count
-    localStorage.setItem('bag', JSON.stringify(bag))
+    this.#count = f
+      .from(this.count)
+      .pipe(f.inc(f.__))
+      .pipe(f.min(9, f.__))
+      .done()
     return this
   }
 
   @repaint
+  @storage.update
   @action.update
   sub () {
-    this.#count = Math.max(1, (this.count - 1))
-    const bag = JSON.parse(localStorage.getItem('bag') ?? '{}')
-    bag[this.#id].count = this.count
-    localStorage.setItem('bag', JSON.stringify(bag))
+    this.#count = f
+      .from(this.count)
+      .pipe(f.dec(f.__))
+      .pipe(f.max(1, f.__))
+      .done()
     return this
   }
 

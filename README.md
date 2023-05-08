@@ -38,6 +38,9 @@ Todas essas técnicas foram aplicadas de forma cuidadosa e planejada, com o obje
 
 ![performance](https://user-images.githubusercontent.com/35740192/236909509-f35b8fe9-c295-4d67-b27a-e30cd0ad08a4.png)
 
+- [Home](https://pagespeed.web.dev/analysis/https-grupoq-pages-dev/yng79kuhw7?form_factor=desktop)
+- [Product](https://pagespeed.web.dev/analysis/https-grupoq-pages-dev-6/dm79oocvpx?form_factor=desktop)
+
 ## Manifesto
 
 O manifesto é uma declaração de princípios que guiam o desenvolvimento do projeto:

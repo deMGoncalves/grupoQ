@@ -8,7 +8,7 @@ Em resumo, o projeto busca simplificar a forma como desenvolvemos aplicações w
 
 ## Estrutura do projeto
 
--  [.prelude]()
+-  [.prelude](https://github.com/deMGoncalves/grupoQ/blob/master/.prelude/README.md)
     -  [artifact]()
     -  [directive]()
     -  [element]()

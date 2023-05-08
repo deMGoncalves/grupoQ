@@ -8,7 +8,6 @@ Em resumo, o projeto busca simplificar a forma como desenvolvemos aplicações w
 
 ## Estrutura do projeto
 
--  [.assets]()
 -  [.prelude]()
     -  [artifact]()
     -  [directive]()

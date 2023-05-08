@@ -2,6 +2,7 @@ import * as filter from '@grupoq/filter'
 import { paint, repaint } from '@grupoq/h'
 import action from './action'
 import component from './component'
+import local from '@grupoq/local'
 import magic from '@grupoq/magic'
 
 @paint(component)
@@ -63,9 +64,7 @@ class Product {
 
   @action.remove
   remove () {
-    const bag = JSON.parse(localStorage.getItem('bag') ?? '{}')
-    delete bag[this.#id]
-    localStorage.setItem('bag', JSON.stringify(bag))
+    delete local.bag[this.#id]
     return this
   }
 

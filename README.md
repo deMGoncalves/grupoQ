@@ -26,6 +26,18 @@ As imagens foram selecionadas para ilustrar as principais funcionalidades do pro
 
 ![screenshots](https://user-images.githubusercontent.com/35740192/236906267-12a44954-f540-4479-8a63-943e6e0e1154.png)
 
+## Performance (Mobile vs Desktop)
+
+A performance é um aspecto crucial para o sucesso de qualquer aplicação web. Neste projeto, foram adotadas diversas técnicas para garantir que a experiência do usuário seja a mais fluída possível, tanto na página inicial quanto na página de produtos.
+
+Na página inicial, foram utilizadas técnicas como lazy loading de imagens, code splitting e minificação de arquivos. Além disso, o layout foi otimizado para garantir um carregamento rápido e eficiente em dispositivos móveis.
+
+Já na página de produtos, além das técnicas utilizadas na página inicial, foram adotadas outras estratégias para garantir a melhor performance possível. Entre elas, destacam-se a otimização das imagens dos produtos, o uso de cache para reduzir o tempo de carregamento e a utilização de estratégias para carregamento assíncrono de conteúdo.
+
+Todas essas técnicas foram aplicadas de forma cuidadosa e planejada, com o objetivo de garantir que a experiência do usuário seja a melhor possível, independentemente da conexão de internet ou do dispositivo utilizado. Como resultado, a aplicação oferece uma navegação rápida, fluída e sem interrupções, proporcionando uma experiência de compra agradável e eficiente para os usuários.
+
+![performance](https://user-images.githubusercontent.com/35740192/236909509-f35b8fe9-c295-4d67-b27a-e30cd0ad08a4.png)
+
 ## Manifesto
 
 O manifesto é uma declaração de princípios que guiam o desenvolvimento do projeto:

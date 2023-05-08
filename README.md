@@ -57,6 +57,16 @@ Essa estratégia de divisão de arquivos permite que a aplicação carregue mais
 
 - [Report](https://grupoq.pages.dev/report)
 
+## Google Search Tools
+
+É importante destacar que as páginas deste projeto são indexáveis pelo Google Search, o que significa que elas podem ser encontradas facilmente pelos usuários que realizam pesquisas na web. Isso ocorre porque o projeto utiliza práticas de SEO (Search Engine Optimization) para otimizar o conteúdo e a estrutura das páginas, tornando-as mais amigáveis para os mecanismos de busca.
+
+Além disso, as páginas também estão de acordo com as diretrizes do Google para indexação, como a utilização de sitemaps, tags meta, entre outros. Isso permite que as páginas sejam mais facilmente identificadas e classificadas pelos mecanismos de busca, aumentando sua visibilidade para os usuários.
+
+Com isso, o projeto busca garantir que as páginas sejam facilmente encontradas pelos usuários que buscam informações relacionadas aos seus conteúdos, aumentando assim o tráfego orgânico e a visibilidade do projeto na web.
+
+![image](https://user-images.githubusercontent.com/35740192/236912691-42857d84-b63c-4b4b-858c-21c905e9aa4d.png)
+
 ## Manifesto
 
 O manifesto é uma declaração de princípios que guiam o desenvolvimento do projeto:

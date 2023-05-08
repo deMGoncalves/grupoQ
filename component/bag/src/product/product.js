@@ -67,7 +67,10 @@ class Product {
   }
 
   [magic.sum] () {
-    return (this.#data.price ?? 0) * (this.#data.count ?? 1)
+    return f.multiply(
+      (this.#data.price ?? 0),
+      (this.#data.count ?? 1)
+    )
   }
 
   static create (bag) {

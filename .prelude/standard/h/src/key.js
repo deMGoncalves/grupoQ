@@ -2,7 +2,7 @@ class Key {
   #value
 
   get value () {
-    return (this.#value ??= Math.random())
+    return this.#value
   }
 
   constructor (value) {

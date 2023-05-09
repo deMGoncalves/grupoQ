@@ -1,6 +1,6 @@
 import styled from '@grupoq/styled'
 
-export default styled.div`
+export default styled.xpto`
   background-color: var(--color-pure-white);
   border-radius: var(--border-radius-sm);
   content-visibility: auto;

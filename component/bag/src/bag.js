@@ -8,7 +8,6 @@ import storage from './storage'
 
 @paint(component)
 @action
-@storage
 class Bag {
   #opened
   #products
@@ -32,20 +31,20 @@ class Bag {
     return this
   }
 
-  @storage.remove
-  @action.remove
+  @storage.push
+  @repaint
   remove (product) {
     f.remove(this.#products, product)
     return this
   }
 
+  @storage.pull
   @repaint
   [action.open] () {
     this.#opened = true
     return this
   }
 
-  @repaint
   [storage.onResponse] (products) {
     this.#products = products.map(Product.create(this))
     return this
